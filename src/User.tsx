@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconBrandInstagram, IconBrandLeetcode, IconBrandLinkedin, IconBrandYoutube, IconKeyboard } from "@tabler/icons-react";
-
+import Interview from './assets/interview.jpeg'
 const Info = {
     name: "Asamit",
     stack: ["Software Engineer", "Full Stack Developer", "Competitive Programmer"],

@@ -1,5 +1,7 @@
 import { Badge, Button, Group, Image, Indicator, Modal, ScrollArea, Text, useMatches } from "@mantine/core";
+import Interview from "../assets/interview.jpeg"
 
+import Form from "../assets/form.webp"
 const FullProjectModal = (props: any) => {
     const download=useMatches({xs:"xs", md:"sm", lg:"md", bs:"lg"});
     const techno=useMatches({xs:"md", sm:"md", md:"lg", bs:"xl"});
@@ -14,8 +16,8 @@ const FullProjectModal = (props: any) => {
             <Modal.Body className="!bg-bgColor xs-mx:!p-2 !pt-2 !border-primaryColor  !border-2 !border-t-0 !rounded-bl-3xl !rounded-br-3xl">
                 <Image
                     className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA]"
-                    src={props.image}
-                    alt={props.image}
+                    src={props.image==='./assets/interview.jpeg' ?  Interview : Form}
+                    alt="Project Image"
                 />
                 <div className="flex flex-wrap gap-3 xs-mx:gap-2 my-3">
                     {props.technologies.map((tech: string, index: number) => <Badge key={index} size={techno} variant="light" color="#64FFDA">{tech}</Badge>)}
